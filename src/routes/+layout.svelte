@@ -8,7 +8,7 @@
 
 <div class="min-h-screen overflow-hidden bg-gray-100 min-w-screen">
 	<Navbar />
-	<div class="w-screen min-h-screen p-4 m-auto prose bg-gray-100">
+	<div class="min-h-screen p-4 m-auto prose bg-gray-100 max-w-screen">
 		<div class="grid">
 			<Transition url={data.url}>
 				<slot />

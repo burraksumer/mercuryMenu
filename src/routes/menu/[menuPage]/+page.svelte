@@ -2,16 +2,13 @@
 	import { page } from '$app/stores';
 	export let data;
 	const { coffees } = data;
-	const collectionName = $page.params.menuPage;
-	console.log($page.params);
-	console.log(coffees);
 </script>
 
-<h1 class="m-auto mt-5 mb-5">{coffees[0].name}</h1>
+<h1 class="m-auto mt-5 mb-5 text-center">{coffees[0].name}</h1>
 
 {#each coffees.slice(1) as coffee}
 	<div class="m-auto my-5">
-		<div class="w-screen max-w-sm overflow-hidden border rounded shadow-md">
+		<div class="max-w-sm m-auto overflow-hidden border rounded shadow-md max-w-screen">
 			<img
 				src={coffee.img.length > 0 ? coffee.img : ''}
 				alt="Coffee"
