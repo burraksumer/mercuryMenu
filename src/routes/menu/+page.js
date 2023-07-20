@@ -8,9 +8,6 @@ export const load = async ({ fetch }) => {
 	};
 
 	return {
-		headers: {
-			'cache-control': 'public, max-age=3600'
-		},
 		collections: fetchCollections()
 	};
 };

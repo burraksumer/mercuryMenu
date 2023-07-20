@@ -2,15 +2,14 @@
 	import { page } from '$app/stores';
 	import { onMount } from 'svelte';
 	import lottie from 'lottie-web';
-	import animationData from './eyes.json';
+	import animationData from '../../lotties/eyes.json';
 
 	onMount(() => {
 		lottie.loadAnimation({
 			container: document.getElementById('eyes'),
 			animationData,
 			loop: true,
-			autoplay: true,
-			speed: 0.5
+			autoplay: true
 		});
 	});
 </script>
