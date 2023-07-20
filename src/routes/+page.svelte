@@ -1,0 +1,16 @@
+<script>
+	import '../app.css';
+</script>
+
+<div class="">
+	<h2 class="p-0 m-0 mb-4 text-center">Mercury online menüye hoşgeldiniz!👋</h2>
+	<p class="">
+		Mercury Kafe olarak biz kahvenin en güzelini içmeniz gerektiğine inanıyoruz, bu yüzden kaliteli
+		çekirdeklerle özenle hazırlanan kahvelerimizi sizinle buluşturuyoruz. Kahvenin zengin
+		aromalarıyla sizi mest edecek bir kahve deneyimi sunmak için her detayı titizlikle düşünüyoruz.
+		Mercury Kafe'de kahve tutkunlarının damak zevkine hitap eden geniş bir menü seçeneğimiz
+		bulunuyoruz. Sıcak espresso çeşitleri, aromatik filtre kahveler veya lezzetli soğuk içecekler
+		arasından istediğinizi seçebilirsiniz. Kaliteli kahve ve samimi atmosferimizle sizleri
+		ağırlamaktan mutluluk duyuyoruz. Mercury Kafe, en güzel kahve deneyimini yaşamanız için burada!
+	</p>
+</div>
