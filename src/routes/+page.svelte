@@ -4,7 +4,9 @@
 
 <div class="pb-[20%]">
 	<h2 class="p-0 m-0 mb-8 text-center">Mercury online menüye hoşgeldiniz!👋</h2>
-	<img class="mb-1" src="./coldBrew.jpg" alt="Cold Brew Bottles" />
+	<div class="min-[350px]:min-h-[345px] min-h-[380px] md:min-h-[530px]">
+		<img loading="lazy" class="mb-1" src="./coldBrew.jpg" alt="Cold Brew Bottles" />
+	</div>
 	<p class="">
 		Mercury Kafe olarak biz kahvenin en güzelini içmeniz gerektiğine inanıyoruz, bu yüzden kaliteli
 		çekirdeklerle özenle hazırlanan kahvelerimizi sizinle buluşturuyoruz. Kahvenin zengin
