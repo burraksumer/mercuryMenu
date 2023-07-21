@@ -2,8 +2,9 @@
 	import '../app.css';
 </script>
 
-<div class="">
-	<h2 class="p-0 m-0 mb-4 text-center">Mercury online menüye hoşgeldiniz!👋</h2>
+<div class="pb-[20%]">
+	<h2 class="p-0 m-0 mb-8 text-center">Mercury online menüye hoşgeldiniz!👋</h2>
+	<img class="mb-1" src="./coldBrew.jpg" alt="Cold Brew Bottles" />
 	<p class="">
 		Mercury Kafe olarak biz kahvenin en güzelini içmeniz gerektiğine inanıyoruz, bu yüzden kaliteli
 		çekirdeklerle özenle hazırlanan kahvelerimizi sizinle buluşturuyoruz. Kahvenin zengin
