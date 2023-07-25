@@ -5,7 +5,7 @@
 <nav class="bg-gray-100">
 	<div class="flex py-5 min-w-max">
 		<a href="/" class="m-auto">
-			<img src="./logo.svg" alt="Mercury Cafe" height="80" width="80" class="inline-block m-0" />
+			<img src="/logo.svg" alt="Mercury Cafe" height="80" width="80" class="inline-block m-0" />
 		</a>
 
 		<div class="inline-block m-auto text-center">
