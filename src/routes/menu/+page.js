@@ -7,6 +7,10 @@ export const load = async ({ fetch, setHeaders }) => {
 		return collectionsData.items;
 	};
 
+	setHeaders({
+		'Cache-control': 'max-age=600'
+	});
+
 	return {
 		collections: fetchCollections()
 	};
