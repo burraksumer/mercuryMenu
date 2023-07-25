@@ -1,8 +1,7 @@
 <script>
 	import '../app.css';
 	import { navigationIsDelayed } from '$lib/navigating.js';
-	import CTA from './cta/CTA.svelte';
-
+	import CTA from './CTA/CTA.svelte';
 	import Head from './head/Head.svelte';
 	import Navbar from './navbar/Navbar.svelte';
 	import Transition from './transition/transition.svelte';
