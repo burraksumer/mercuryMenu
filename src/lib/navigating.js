@@ -7,7 +7,9 @@ export const navigationIsDelayed = derived(navigating, (newValue, set) => {
 		clearTimeout(timer);
 	}
 	if (newValue) {
-		timer = setTimeout(() => set(true), 150);
+		timer = setTimeout(() => {
+			set(true), window.scrollTo(0, 0);
+		}, 150);
 	}
 	set(false);
 });
