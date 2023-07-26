@@ -1,5 +1,7 @@
 <div class="fixed left-0 right-0 w-screen h-screen bg-gray-100">
-	<div class="flex items-center justify-center min-h-screen p-5 bg-gray-100 min-w-screen pb-[75%]">
+	<div
+		class="flex items-center justify-center min-h-screen p-5 bg-gray-100 min-w-screen pb-[75%] md:pb-[25%]"
+	>
 		<svg
 			aria-hidden="true"
 			class="w-16 h-16 mr-2 text-gray-200 animate-spin dark:text-gray-200 fill-orange-200"
