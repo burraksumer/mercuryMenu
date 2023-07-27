@@ -17,7 +17,7 @@
   </p>
 </p>
 
-![Contributors](https://img.shields.io/github/contributors/burraksumer/mercuryMenu?color=dark-green) ![Issues](https://img.shields.io/github/issues/burraksumer/mercuryMenu) ![License](https://camo.githubusercontent.com/3a31216b2275b6358811eed563c0fed34aa02cf8d1e71b160b827e41f676558d/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c6973656e63652d575446504c2d73756363657373)
+![Contributors](https://img.shields.io/github/contributors/burraksumer/mercuryMenu?color=dark-green) ![Issues](https://img.shields.io/github/issues/burraksumer/mercuryMenu) ![License](https://camo.githubusercontent.com/3a31216b2275b6358811eed563c0fed34aa02cf8d1e71b160b827e41f676558d/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c6973656e63652d575446504c2d73756363657373) [![Netlify Status](https://api.netlify.com/api/v1/badges/b194d520-9b32-4352-965a-93fbc479997a/deploy-status)](https://app.netlify.com/sites/mercurymenu/deploys)
 
 ## About The Project
 
