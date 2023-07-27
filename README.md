@@ -1,7 +1,7 @@
 <br/>
 <p align="center">
   <a href="https://github.com/burraksumer/mercuryMenu">
-    <img src="https://raw.githubusercontent.com/burraksumer/mercuryMenu/main/static/logo.svg" alt="Logo" width="80" height="80">
+    <img src="https://raw.githubusercontent.com/burraksumer/mercuryMenu/main/static/logoPNG.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Mercury Online Menu</h3>
@@ -86,7 +86,7 @@ Distributed under the WTFPL License. See [LICENSE](http://www.wtfpl.net/) for mo
 
 ## Authors
 
-- ** [Burak Sümer](https://github.com/burraksumer/) **
+- [Burak Sümer](https://github.com/burraksumer/)
 
 ## Acknowledgements
 
