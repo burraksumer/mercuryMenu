@@ -1,4 +1,4 @@
-<div class="fixed left-0 right-0 w-screen h-screen bg-gray-100">
+<div class="fixed left-0 right-0 w-screen h-screen overflow-hidden bg-gray-100">
 	<div
 		class="flex items-center justify-center min-h-screen p-5 bg-gray-100 min-w-screen pb-[75%] md:pb-[25%]"
 	>
