@@ -38,7 +38,7 @@ This can be used a template to your online menu. You don't need to link me altho
 
 ### Prerequisites
 
-- npm
+- npm <br />
   **or**
 - nvm
 
