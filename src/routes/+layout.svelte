@@ -7,6 +7,7 @@
 	import '../app.postcss';
 	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
 	import { afterNavigate } from '$app/navigation';
+	import CTA from '../lib/CTA/CTA.svelte';
 
 	afterNavigate(() => {
 		document.getElementById('page')?.scrollTo(0, 0);
@@ -28,7 +29,8 @@
 		</AppBar>
 	</svelte:fragment>
 	<!-- Page Route Content -->
-	<div class="p-5 m-auto max-w-lg" id="page">
+	<div class="max-w-lg p-5 m-auto" id="page">
 		<slot />
 	</div>
+	<CTA />
 </AppShell>
