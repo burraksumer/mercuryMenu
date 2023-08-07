@@ -8,6 +8,7 @@
 	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
 	import { afterNavigate } from '$app/navigation';
 	import CTA from '../lib/CTA/CTA.svelte';
+	import Navbar from '../lib/navbar/navbar.svelte';
 
 	afterNavigate(() => {
 		document.getElementById('page')?.scrollTo(0, 0);
@@ -23,8 +24,7 @@
 				<a href="/"><img src="/logo.svg" alt="Kahve İkonu" class="h-14" /></a>
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
-				<a class="btn btn-sm variant-ghost-surface" href="/about" rel="noreferrer"> Hakkımızda </a>
-				<a class="btn btn-sm variant-ghost-surface" href="/menu" rel="noreferrer"> Menü </a>
+				<Navbar />
 			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>
