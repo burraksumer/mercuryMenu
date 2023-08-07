@@ -9,11 +9,14 @@
 	import { afterNavigate } from '$app/navigation';
 	import CTA from '../lib/CTA/CTA.svelte';
 	import Navbar from '../lib/navbar/navbar.svelte';
+	import Head from '../lib/head/Head.svelte';
 
 	afterNavigate(() => {
 		document.getElementById('page')?.scrollTo(0, 0);
 	});
 </script>
+
+<Head />
 
 <!-- App Shell -->
 <AppShell>
