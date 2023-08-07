@@ -1,27 +1,34 @@
 <script>
-	import '../app.css';
-	import { navigationIsDelayed } from '$lib/navigating.js';
-	import CTA from './CTA/CTA.svelte';
-	import Head from './head/Head.svelte';
-	import Navbar from './navbar/Navbar.svelte';
-	import Transition from './transition/transition.svelte';
-	import Loading from './loading/Loading.svelte';
-	export let data;
+	// The ordering of these imports is critical to your app working properly
+	import '@skeletonlabs/skeleton/themes/theme-vintage.css';
+	// If you have source.organizeImports set to true in VSCode, then it will auto change this ordering
+	import '@skeletonlabs/skeleton/styles/skeleton.css';
+	// Most of your app wide CSS should be put in this file
+	import '../app.postcss';
+	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
+	import { afterNavigate } from '$app/navigation';
+
+	afterNavigate(() => {
+		document.getElementById('page')?.scrollTo(0, 0);
+	});
 </script>
 
-<Head />
-
-<div class="min-h-screen overflow-hidden bg-gray-100 min-w-screen">
-	<Navbar />
-	<div class="min-h-screen p-4 m-auto prose bg-gray-100 max-w-screen">
-		<div class="grid">
-			<Transition url={data.url}>
-				{#if $navigationIsDelayed}
-					<Loading />
-				{/if}
-				<slot />
-			</Transition>
-		</div>
+<!-- App Shell -->
+<AppShell>
+	<svelte:fragment slot="header">
+		<!-- App Bar -->
+		<AppBar>
+			<svelte:fragment slot="lead">
+				<a href="/"><img src="/logo.svg" alt="Kahve İkonu" class="h-14" /></a>
+			</svelte:fragment>
+			<svelte:fragment slot="trail">
+				<a class="btn btn-sm variant-ghost-surface" href="/about" rel="noreferrer"> Hakkımızda </a>
+				<a class="btn btn-sm variant-ghost-surface" href="/menu" rel="noreferrer"> Menü </a>
+			</svelte:fragment>
+		</AppBar>
+	</svelte:fragment>
+	<!-- Page Route Content -->
+	<div class="p-5 m-auto max-w-lg" id="page">
+		<slot />
 	</div>
-	<CTA />
-</div>
+</AppShell>

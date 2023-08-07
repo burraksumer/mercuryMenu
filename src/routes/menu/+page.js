@@ -12,6 +12,8 @@ export const load = async ({ fetch, setHeaders }) => {
 	});
 
 	return {
-		collections: fetchCollections()
+		streamed: {
+			collections: fetchCollections()
+		}
 	};
 };

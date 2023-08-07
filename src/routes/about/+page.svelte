@@ -1,2 +1,1 @@
-<h1>Hakkımızda</h1>
-<h2>TODO</h2>
+<h1>hehe</h1>

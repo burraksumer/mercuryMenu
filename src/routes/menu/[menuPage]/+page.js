@@ -12,6 +12,8 @@ export const load = async ({ fetch, params, setHeaders }) => {
 	});
 
 	return {
-		coffees: fetchCoffees(params.menuPage)
+		streamed: {
+			coffees: fetchCoffees(params.menuPage)
+		}
 	};
 };
