@@ -28,6 +28,7 @@ Introducing the Mercury Online Menu, a web application I created for a café of 
 ## Built With
 
 - [SvelteKit](https://kit.svelte.dev/)
+- [Skeleton UI](https://www.skeleton.dev/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [PocketBase](https://pocketbase.io/)
 - [Netlify](https://www.netlify.com/)
