@@ -8,9 +8,9 @@
 
 <div class="space-y-4">
 	{#await data.streamed.coffees}
-		<div class="placeholder animate-pulse h1 h-10 m-5" />
+		<div class="h-10 m-5 placeholder animate-pulse h1" />
 		{#each { length: itemNumber } as _, i}
-			<section class="card w-full p-4 space-y-4">
+			<section class="w-full p-4 space-y-4 card">
 				<div class="grid grid-cols-3 gap-4 animate-pulse">
 					<div class="placeholder" />
 					<div class="placeholder" />
@@ -21,7 +21,7 @@
 			</section>
 		{/each}
 	{:then coffees}
-		<h2 class="h1 m-5 text-center">{coffees[0].name}</h2>
+		<h2 class="m-5 text-center h1">{coffees[0].name}</h2>
 		{#each coffees.slice(1) as coffee}
 			<div class="block card space-y-2 m-auto min-h-[100px] card-hover">
 				<img
@@ -29,8 +29,16 @@
 					alt="Koleksiyon Fotoğrafı"
 					class={coffee.img.length > 0 ? 'm-0 object-cover' : 'hidden'}
 				/>
-				<header class="card-header font-bold mb-1">{coffee.name}</header>
-				<section class="card-footer">{coffee.desc}</section>
+				<div class="flex">
+					<div class="flex-1">
+						<header class="mb-1 font-bold card-header">{coffee.name}</header>
+						<section class="card-footer">{coffee.desc}</section>
+					</div>
+					<div class="flex flex-col p-5 m-auto font-bold text-center">
+						<span>{coffee.price}</span>
+						<span>{coffee.doublePrice}</span>
+					</div>
+				</div>
 			</div>
 		{/each}
 	{/await}
