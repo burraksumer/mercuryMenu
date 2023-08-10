@@ -11,12 +11,12 @@
 <div class="space-y-4">
 	{#await data.streamed.collections}
 		{#each { length: collectionNumber } as _, i}
-			<section class="card w-full p-4 space-y-4">
-				<div class="grid grid-cols-3 gap-4 animate-pulse">
+			<section class="card w-full space-y-4 p-4">
+				<div class="grid animate-pulse grid-cols-3 gap-4">
 					<div class="placeholder" />
 					<div class="placeholder" />
 				</div>
-				<div class="grid grid-cols-1 gap-8 animate-pulse">
+				<div class="grid animate-pulse grid-cols-1 gap-8">
 					<div class="placeholder" />
 				</div>
 			</section>
@@ -24,13 +24,13 @@
 	{:then collections}
 		{#each collections as collection}
 			<a href={collection.href} class="h-full">
-				<div class="block card space-y-2 m-auto min-h-[100px] card-hover">
+				<div class="card card-hover m-auto block min-h-[100px] space-y-2">
 					<img
 						src={collection.img.length > 0 ? collection.img : ''}
 						alt="Koleksiyon Fotoğrafı"
 						class={collection.img.length > 0 ? 'm-0 object-cover' : 'hidden'}
 					/>
-					<header class="card-header font-bold mb-1">{collection.name}</header>
+					<header class="card-header mb-1 font-bold">{collection.name}</header>
 					<section class="card-footer">{collection.desc}</section>
 				</div>
 			</a>

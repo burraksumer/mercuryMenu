@@ -32,7 +32,7 @@
 		</AppBar>
 	</svelte:fragment>
 	<!-- Page Route Content -->
-	<div class="max-w-lg p-5 m-auto" id="page">
+	<div class="m-auto max-w-lg p-5" id="page">
 		<slot />
 	</div>
 	<CTA />

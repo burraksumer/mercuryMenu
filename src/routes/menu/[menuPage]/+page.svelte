@@ -8,22 +8,22 @@
 
 <div class="space-y-4">
 	{#await data.streamed.coffees}
-		<div class="h-10 m-5 placeholder animate-pulse h1" />
+		<div class="h1 placeholder m-5 h-10 animate-pulse" />
 		{#each { length: itemNumber } as _, i}
-			<section class="w-full p-4 space-y-4 card">
-				<div class="grid grid-cols-3 gap-4 animate-pulse">
+			<section class="card w-full space-y-4 p-4">
+				<div class="grid animate-pulse grid-cols-3 gap-4">
 					<div class="placeholder" />
 					<div class="placeholder" />
 				</div>
-				<div class="grid grid-cols-1 gap-8 animate-pulse">
+				<div class="grid animate-pulse grid-cols-1 gap-8">
 					<div class="placeholder" />
 				</div>
 			</section>
 		{/each}
 	{:then coffees}
-		<h2 class="m-5 text-center h1">{coffees[0].name}</h2>
+		<h2 class="h1 m-5 text-center">{coffees[0].name}</h2>
 		{#each coffees.slice(1) as coffee}
-			<div class="block card space-y-2 m-auto min-h-[100px] card-hover">
+			<div class="card card-hover m-auto block min-h-[100px] space-y-2">
 				<img
 					src={coffee.img.length > 0 ? coffee.img : ''}
 					alt="Koleksiyon Fotoğrafı"
@@ -31,10 +31,10 @@
 				/>
 				<div class="flex">
 					<div class="flex-1">
-						<header class="mb-1 font-bold card-header">{coffee.name}</header>
+						<header class="card-header mb-1 font-bold">{coffee.name}</header>
 						<section class="card-footer">{coffee.desc}</section>
 					</div>
-					<div class="flex flex-col p-5 m-auto font-bold text-center">
+					<div class="m-auto flex flex-col p-5 text-center font-bold">
 						<span>{coffee.price}</span>
 						<span>{coffee.doublePrice}</span>
 					</div>
