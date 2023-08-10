@@ -10,7 +10,7 @@
 				kaliteli çekirdeklerle özenle hazırlanan kahvelerimizi sizinle buluşturuyoruz. Kahvenin
 				zengin aromalarıyla sizi mest edecek bir kahve deneyimi sunmak için her detayı titizlikle
 				düşünüyoruz. Mercury Kafe'de kahve tutkunlarının damak zevkine hitap eden geniş bir menü
-				seçeneğimiz bulunuyoruz. Sıcak espresso çeşitleri, aromatik filtre kahveler veya lezzetli
+				seçeneğimiz bulunuyor. Sıcak espresso çeşitleri, aromatik filtre kahveler veya lezzetli
 				soğuk içecekler arasından istediğinizi seçebilirsiniz. Kaliteli kahve ve samimi
 				atmosferimizle sizleri ağırlamaktan mutluluk duyuyoruz. Mercury Kafe, en güzel kahve
 				deneyimini yaşamanız için burada!
