@@ -17,11 +17,9 @@ export const load = async ({ fetch, setHeaders }) => {
 			'Cache-control': 'max-age=600'
 		});
 
-		const collections = await fetchCollections();
-
 		return {
 			streamed: {
-				collections
+				collections: fetchCollections()
 			}
 		};
 	} catch (error) {

@@ -17,11 +17,9 @@ export const load = async ({ fetch, params, setHeaders }) => {
 			'Cache-control': 'max-age=600'
 		});
 
-		const coffees = await fetchCoffees(params.menuPage);
-
 		return {
 			streamed: {
-				coffees
+				coffees: fetchCoffees(params.menuPage)
 			}
 		};
 	} catch (error) {
