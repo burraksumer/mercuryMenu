@@ -1,19 +1,33 @@
 export const load = async ({ fetch, setHeaders }) => {
-	const fetchCollections = async () => {
-		const collectionsRes = await fetch(
-			'https://mercury.pockethost.io/api/collections/options/records?sort=order'
-		);
-		const collectionsData = await collectionsRes.json();
-		return collectionsData.items;
-	};
+	try {
+		const fetchCollections = async () => {
+			const collectionsRes = await fetch(
+				'https://mercury.pockethost.io/api/collections/options/records?sort=order'
+			);
 
-	setHeaders({
-		'Cache-control': 'max-age=600'
-	});
+			if (!collectionsRes.ok) {
+				throw new Error(`Failed to fetch collections data. Status: ${collectionsRes.status}`);
+			}
 
-	return {
-		streamed: {
-			collections: fetchCollections()
-		}
-	};
+			const collectionsData = await collectionsRes.json();
+			return collectionsData.items;
+		};
+
+		setHeaders({
+			'Cache-control': 'max-age=600'
+		});
+
+		const collections = await fetchCollections();
+
+		return {
+			streamed: {
+				collections
+			}
+		};
+	} catch (error) {
+		// Handle the error here
+		return {
+			redirect: '/error'
+		};
+	}
 };
