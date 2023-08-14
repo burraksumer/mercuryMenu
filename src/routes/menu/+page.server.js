@@ -14,7 +14,7 @@ export const load = async ({ fetch, setHeaders }) => {
 		};
 
 		setHeaders({
-			'Cache-control': 'max-age=600'
+			'Cache-control': 'max-age=60'
 		});
 
 		return {
